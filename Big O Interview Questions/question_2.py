@@ -3,6 +3,9 @@ Time complexity of print pairs methods
 Question:
     - Create a function which prints to the console the pairs from given array
     - Find the time complexity for created method
+
+Answer:
+    Time complexity: O(n^2)
 """
 
 
