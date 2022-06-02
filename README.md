@@ -1,2 +1,4 @@
 # Python-DSA
-In repository contains some solutions I implemented for the Udemy course "Java Data Structures and Algorithsm Masterclass"; however, Python will be the programming language I used instead of Java
+
+This repository contains my solutions for many problems, categorized into different topics, that I collected through
+different courses on Udemy and on internet. I will mainly use Python to implement the solutions.
