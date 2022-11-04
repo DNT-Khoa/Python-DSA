@@ -1,22 +1,27 @@
-"""
-Question: How to find the sum of digits of a positive integer number using recursion ?
-    - 21 = 2*10 + 1
-    - 234 = 2*100 + 3*10 + 4
+'''
+How to find the sum of digits of a positive integer number using recursion?
 
-    234 // 10 = 23.4  => 4 remainder, 23 result
-    23 // 10 = 2.3 => 3 remainder, 2 result
-    2 // 10 = 0 if result is 0 return n
+23456 = 23456 // 10 = 2345 and 23456 % 10 = 6
 
-"""
+recursive case: sum(n) = n % 10 + sum(n // 10)
 
+base case: n // 10 = 0 return n
 
-def sum_of_digits(n):
-    # Edge case
-    if n <= 0:
-        return 0
+edge case: n < 0
 
-    return (n % 10) + sum_of_digits(n // 10)
+'''
 
 
-my_num = 12345
-print(sum_of_digits(my_num))
+def sumOfDigits(num):
+    assert num >= 0, "Positive integer expected"
+
+    if num // 10 == 0:
+        return num
+
+    return num % 10 + sumOfDigits(num // 10)
+
+
+num = 12345
+
+
+print(sumOfDigits(num))
