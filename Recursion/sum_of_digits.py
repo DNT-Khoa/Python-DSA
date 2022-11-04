@@ -13,7 +13,7 @@ edge case: n < 0
 
 
 def sumOfDigits(num):
-    assert num >= 0, "Positive integer expected"
+    assert num >= 0 and int(num) == num, "Positive integer expected"
 
     if num // 10 == 0:
         return num
